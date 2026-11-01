@@ -1,0 +1,70 @@
+/* =================================================_*/
+/* 1. ESTRUTURA GERAL COM FLEXBOX (Centralização do App) */
+/* =================================================_*/
+
+body {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f4f5f7;
+}
+
+/* Limitador de largura da "tela" do app */
+.app-container {
+    width: 100%;
+    max-width: 480px; /* Simula a largura de uma tela mobile/card */
+    display: flex;
+    flex-direction: column;
+}
+
+/* =================================================_*/
+/* 2. ALINHAMENTO INTERNO DE BOTÕES COM FLEXBOX      */
+/* =================================================_*/
+
+.menu-opcao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espaça o texto e a seta (>) nas pontas */
+    padding: 16px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.2s ease;
+}
+
+.menu-opcao:hover {
+    background-color: #eeeeee;
+}
+
+/* =================================================_*/
+/* 3. ESTRUTURAÇÃO DO MENU COM CSS GRID             */
+/* =================================================_*/
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Por padrão (mobile): 1 coluna */
+    gap: 12px;                  /* Espaçamento uniforme entre os cards */
+    margin-top: 15px;
+}
+
+/* =================================================_*/
+/* 4. LAYOUT RESPONSIVO (MEDIA QUERIES)             */
+/* =================================================_*/
+
+/* Para telas maiores (Tablets e Desktops a partir de 768px) */
+@media screen and (min-width: 768px) {
+    .app-container {
+        max-width: 700px; /* Expandimos a largura do app na tela grande */
+    }
+
+    /* Alteramos o Grid para 2 colunas para aproveitar o espaço */
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,75 @@
+/* Estilos gerais do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f5f7;
+    color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Cabeçalho principal com fundo escuro */
+header {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 0;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+/* Container do menu principal e blocos de opções */
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Estilo para os blocos de links das opções */
+.menu-opcao {
+    display: block;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-opcao:hover {
+    background-color: #eeeeee;
+}
+
+.menu-opcao strong {
+    font-size: 16px;
+    color: #000000;
+}
+
+.menu-opcao p {
+    margin: 5px 0 0 0;
+    color: #666666;
+    font-size: 13px;
+}
+
+/* Rodapé / Sair do sistema */
+footer {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 14px;
+}
